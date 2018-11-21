@@ -5,10 +5,10 @@
 
 testing:
    script: testing/2.simple-tests/drive-dig-in-pin-to-trigger-network-cmd.py
-    device_update:
-        env_vars:
-            - $SPN_PARTICLE_TOKEN
-        devices:
-            - $DEVID_1
-        ota_method: particle
-        binary: auto
+   device_update:
+       env_vars:
+           - $SPN_PARTICLE_TOKEN
+       devices:
+           - $DEVID_1
+       ota_method: particle
+       binary: auto
