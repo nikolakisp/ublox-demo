@@ -14,7 +14,7 @@ from Spanner import Spanner
 from Testboard import Testboard
 
 
-testboard = Testboard("testboard_name")
+testboard = Testboard("Wubby_Test")
 
 DAC1 = "A6"
 
