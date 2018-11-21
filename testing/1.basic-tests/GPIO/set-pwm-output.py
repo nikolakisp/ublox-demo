@@ -16,13 +16,15 @@ import Testboard
 # Output Pin
 OUTPUT_PIN = "D0"
 
-testboard = Testboard("testboard_name")
+testboard = Testboard("Wubby_Test")
 
 def set_pwm_output():
     # In this example, we'll give it a 50% duty cycle. Our pwmWrite takes values
     # from 0 to 4095, so a 50% duty cycle would be 2047.
-    testboard.pwmWrite(OUTPUT_PIN, 2047)
+    value=testboard.pwmWrite(OUTPUT_PIN, 2047)
     # See also pwmWrite(pin, value, frequency)
+    
+    spanner.assertFalse(value)
 
 if __name__ == "__main__":
 
