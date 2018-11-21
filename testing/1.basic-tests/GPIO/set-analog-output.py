@@ -24,7 +24,8 @@ def set_analog_output():
     # In this example, let's say we want to give out 2V. Our analogWrite value
     # can be from 0 to 4095, which corresponds to a range of 0-3.3V. By doing
     # the calculation (2/3.3*4096), we get a value of about 2482.
-    testboard.analogWrite(DAC1, 2482)
+    value=testboard.analogWrite(DAC1, 2482)
+    spanner.assertFalse(value)
 
 if __name__ == "__main__":
 
