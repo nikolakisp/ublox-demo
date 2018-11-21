@@ -10,5 +10,5 @@ testing:
 #            - $SPN_PARTICLE_TOKEN
 #        devices:
 #            - $DEVID_1
-        ota_method: particle
-        binary: auto
+#        ota_method: particle
+#        binary: auto
