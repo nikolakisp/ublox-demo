@@ -20,7 +20,7 @@ import Testboard
 
 device = Device("device_name")
 
-testboard = Testboard("testboard_name")
+testboard = Testboard("Wubby_Test")
 
 # Our Product's Input will be connected the Testboard's Pin D3, making it our
 # Output Pin
