@@ -4,7 +4,7 @@ build_binary:
    script: cd $SPN_BUILDER_SDK && make PLATFORM=photon APPDIR=$SPN_PROJECT_DIR/firmware
 
 testing:
-    script: testing/basic-tests/GPIO/read-analog-input.py
+    script: testing/1.basic-tests/GPIO/read-analog-input.py
 #    device_update:
 #        env_vars:
 #            - $SPN_PARTICLE_TOKEN
