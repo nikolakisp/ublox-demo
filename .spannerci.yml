@@ -3,8 +3,8 @@ build_binary:
    binary_name: 'firmware/target/firmware.bin'
    script: cd $SPN_BUILDER_SDK && make PLATFORM=photon APPDIR=$SPN_PROJECT_DIR/firmware
 
-testing:
-   script: testing/1.basic-tests/GPIO/set-analog-output.py
+#testing:
+#   script: testing/1.basic-tests/GPIO/set-analog-output.py
 #    device_update:
 #        env_vars:
 #            - $SPN_PARTICLE_TOKEN
