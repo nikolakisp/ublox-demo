@@ -18,7 +18,7 @@ import Device from AWSDevice
 import Testboard
 
 
-device = Device("device_name")
+device = Device("DEVID_1")
 
 testboard = Testboard("Wubby_Test")
 
