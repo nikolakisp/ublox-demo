@@ -2,11 +2,10 @@
 #     builder: 'particle photon'
 #     binary_name: 'firmware/target/firmware.bin'
 #     script: cd $SPN_BUILDER_SDK && make PLATFORM=photon APPDIR=$SPN_PROJECT_DIR/firmware
-
+env_vars:
+   - $SPN_PARTICLE_TOKEN
 testing:
-   script: testing/1.basic-tests/GPIO/read-analog-input.py
-   env_vars:
-     - $SPN_PARTICLE_TOKEN
+   script: testing/3.complex-tests/disable-wifi-and-test-functionality.py
    device_update:
        devices:
            - $DEVID_1
