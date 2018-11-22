@@ -4,7 +4,7 @@ build_binary:
      script: cd $SPN_BUILDER_SDK && make PLATFORM=photon APPDIR=$SPN_PROJECT_DIR/firmware
      
 testing:
-   pre_flight: "echo "....." & echo pp"
+   pre_flight: echo "....."
    script: testing/sample-test-script.py
    post_flight: ls
    post_flight: echo "++++++"
