@@ -7,7 +7,7 @@ testing:
    pre_flight: "echo "....." & echo pp"
    script: testing/sample-test-script.py
    post_flight: ls
-   post_flight: 'echo "++++++"'
+   post_flight: echo "++++++"
    #env_vars:
    #     - $SPN_PARTICLE_TOKEN
    #device_update:
