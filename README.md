@@ -27,7 +27,7 @@ As soon as we create an account and make a new Project in Spanner CI Platform, w
 If you haven't used Spanner CI before, you can create a new account by visiting the [Create an Account](http://console.spannerci.com/app/accounts/register) page. To sign-up, you can either use your GitHub account (recommended) or create a new account directly from Spanner.
 
 #### Option 1: Sign-Up with GitHub ###
-If you already have a GitHub account click the `SIGN UP WITH GITHUB` button. This will redirect you to GitHub to authorize and install the Spanner App and then you'll be automatically sign-in to the Spanner CI Platform where you can fill your organization info and start using Spanner. That's the recommended way to sign-up because it doesn't require further actions regarding the Spanner integration with GitHub. Details about the GitHub integration can be then found under the [Integrations](http://console.spannerci.com/app/integrations) page.
+If you already have a GitHub account click the `SIGN UP WITH GITHUB` button. This will redirect you to GitHub to authorize then you'll be automatically sign-in to the Spanner CI Platform where you can fill your organization info and start using Spanner. After that you have to go to integrations, click the `GitHub App` and then the `Install App on Github ` button so as to install the Spanner CI App, which will complete the integration with GitHub. That's the recommended way to sign-up because it doesn't require further actions regarding the Spanner integration with GitHub. Details about the GitHub integration can be then found under the [Integrations](http://console.spannerci.com/app/integrations) page.
 
 #### Option 2: Regular Sign-Up ###
 1. Enter your basic information and click `REGISTER` to continue.
