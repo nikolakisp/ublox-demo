@@ -34,7 +34,7 @@ If you already have a GitHub account click the `SIGN UP WITH GITHUB` button. Thi
 2. Use the credentials provided above to sign-in.
 3. Enter your organization info to access the Spanner UI. Next step is to integrate Spanner CI with GitHub.
 4. Go to the [Integrations](http://console.spannerci.com/app/integrations) page under the Organization section.
-5. Under the available integrations, click the `GitHub App` and then the `Add! ` button. This will redirect you to GitHub to authorize and install the Spanner CI App, which will complete the integration with GitHub.
+5. Under the available integrations, click the `GitHub App` and then the `Authenticate Github ` button. This will redirect you to GitHub to authorize. After that go back to integrations, click the `GitHub App` and then the `Install App on Github ` button so as to install the Spanner CI App, which will complete the integration with GitHub.
 
 #### About the Spanner CI App in GitHub
 Spanner provides an official Github Spanner CI Application for easy integration with GitHub. This authorises the Spanner CI platform to access Github repositories. The application can be found at: https://github.com/apps/spannerci-app and will be installed as described in the above steps.
