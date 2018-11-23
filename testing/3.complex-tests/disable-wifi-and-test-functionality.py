@@ -6,18 +6,21 @@
 # In this particular example the device we are testing is a Smart Switch, which
 # responds by toggling one of its pins On of Off whenever the user manually
 # presses the button on the device..
-
+#
 # Our Testboard is acting as the Access Point that provides network connectivity
 # to our device. So by turning off the Access Point our device should get into
 # Network Discovery mode. However, it should still operate properly.
-
+#
 # The goal of this example is to show you how you can control more exotic (but
 # absolutely critical) "inputs" in a test. Besides sensors, inputs and outputs,
 # the network connectivity is an important part of the environment that needs to
 # be mocked/tested in a functional test.
-
+#
 # This is one real world example of a complex, but realistic, functional test
 # you would run for your devices.
+# 
+# Note: To use this example a special Testboard that can operate in Access Point
+# mode is required. 
 
 import time
 import sys
@@ -55,9 +58,8 @@ def initialize_switch_off():
 
 def wififoff_toggle_button_toggle_switch():
     # We are turning off the Access Point, so our device will now be in Network
-    # Discovery mode. For this case we turn the wifi on by executing the above request.
-    # The execute function of spanner library can be used for any post request. 
-    testboard.http("http://localhost:5000/wifioff")
+    # Discovery mode. 
+    testboard.wifiOff()
     time.sleep(10)
 
     # check PIN state, make sure it's OFF
