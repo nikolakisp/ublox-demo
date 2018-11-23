@@ -88,8 +88,6 @@ Basically, the `.spannerci.yml` tells Spanner what to do. By default, it runs wi
 You don't need to use all the above stages and stages with no definitions will be ignored. Each stage contains definitions on what to do. A sample `.spannerci.yml` file is shown below:
 
 ```
-pre_flight: echo "Run as default"
-
 code_qa:
     level: basic
     source: firmware/
@@ -101,10 +99,6 @@ build_binary:
     binary_name: 'firmware/target/firmware.bin'
     script: cd $SPN_BUILDER_SDK && make PLATFORM=photon APPDIR=$SPN_PROJECT_DIR/firmware
     post_flight: echo 'Finished'
-
-## binary_name: Path of the generated binary file based on the SDK platform's documentation
-## SPN_BUILDER_SDK: SDK directory of the selected builder
-## SPN_PROJECT_DIR: User Directory
 
 testing:
     script: testing/basic-tests/GPIO/read-digital-output/scenario.py
@@ -118,6 +112,10 @@ testing:
         binary: auto
 ```
 
+- SPN_BUILDER_SDK: SDK directory of the selected builder
+- SPN_PROJECT_DIR: User Directory
+
+
 A stage is defined by a list of parameters that define the stage behavior.
 
 | Keyword | Required | Description |
@@ -127,6 +125,7 @@ A stage is defined by a list of parameters that define the stage behavior.
 | env_vars      | No  | Defines a list with environment variables that will be passed in the virtual environment |
 | source        | Yes | Defines the source directory of the firmware |
 | script        | Yes | Defines the script path or command to execute |
+| binary_name:  | Yes | Path of the generated binary file based on the SDK platform's documentation
 | device_update | No  | Enables OTA update of devices before testing |
 | devices       | Yes | Defines a list of devices to apply the OTA update |
 | ota_method    | Yes | Defines the preferred method for OTA updates (2) |
