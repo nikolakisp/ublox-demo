@@ -77,9 +77,9 @@ All the environment variables inside [.spannerci.yml](#configuration-with-spanne
 
 Spanner supports a number of pre-defined environment variables, that are either mandatory to use some of the Spanner builders and OTA update methods or just convenient. All Spanner environment variables start with the `SPN_` prefix. 
 For example: 
-- SPN_BUILDER_SDK: is the SDK directory of the selected builder
-- SPN_PROJECT_DIR: is related to User Directory
-- SPN_OUTPUT_BINARY: is the filename of your generated binary for testing section use.
+- `SPN_BUILDER_SDK`: is the SDK directory of the selected builder
+- `SPN_PROJECT_DIR`: is related to User Directory
+- `SPN_OUTPUT_BINARY`: is the filename of your generated binary for testing section use.
 
   ...
 
