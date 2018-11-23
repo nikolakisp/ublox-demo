@@ -80,7 +80,7 @@ For example:
 - SPN_PROJECT_DIR: is related to User Directory
 - SPN_OUTPUT_BINARY: is the filename of your generated binary for testing section use.
 
-...
+  ...
 
 Please contact us to get a full list of the Spanner pre-defined environment variables.
 
