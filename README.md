@@ -74,7 +74,11 @@ os.environ['ACCESS_TOKEN']
 ```
 Do not forget to set the declared project's environment variables to your [.spannerci.yml](#configuration-with-spannerciyml) file.
 
-Spanner supports a number of pre-defined environment variables, that are either mandatory to use some of the Spanner builders and OTA update methods or just convenient. All Spanner environment variables start with the `SPN_` prefix. Please contact us to get a full list of the Spanner pre-defined environment variables.
+Spanner supports a number of pre-defined environment variables, that are either mandatory to use some of the Spanner builders and OTA update methods or just convenient. All Spanner environment variables start with the `SPN_` prefix. 
+For example: 
+- SPN_BUILDER_SDK: is the SDK directory of the selected builder
+- SPN_PROJECT_DIR: is related to User Directory
+Please contact us to get a full list of the Spanner pre-defined environment variables.
 
 ## Configuration with .spannerci.yml
 Spanner CI enables continuous integration by adding a `.spannerci.yml` file in the root directory of your repository. This, together with some more configuration options that are mentioned later, make every new commit or pull request to automatically trigger Spanner.
@@ -108,10 +112,6 @@ testing:
         ota_method: 'particle'
         binary: auto
 ```
-
-- SPN_BUILDER_SDK: SDK directory of the selected builder
-- SPN_PROJECT_DIR: User Directory
-
 
 A stage is defined by a list of parameters that define the stage behavior.
 
