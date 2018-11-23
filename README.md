@@ -72,7 +72,8 @@ In the latter case, we can reference them as Linux environment variables inside 
 os.environ['DB_NAME']
 os.environ['ACCESS_TOKEN']
 ```
-Do not forget to set the declared project's environment variables to your [.spannerci.yml](#configuration-with-spannerciyml) file.
+
+All the environment variables inside [.spannerci.yml](#configuration-with-spannerciyml) must be defined also to the related section in the Project Settings page of Spanner CI console.
 
 Spanner supports a number of pre-defined environment variables, that are either mandatory to use some of the Spanner builders and OTA update methods or just convenient. All Spanner environment variables start with the `SPN_` prefix. 
 For example: 
