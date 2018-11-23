@@ -125,7 +125,7 @@ A stage is defined by a list of parameters that define the stage behavior.
 | env_vars      | No  | Defines a list with environment variables that will be passed in the virtual environment |
 | source        | Yes | Defines the source directory of the firmware |
 | script        | Yes | Defines the script path or command to execute |
-| binary_name:  | Yes | Path of the generated binary file based on the SDK platform's documentation
+| binary_name   | Yes | Path of the generated binary file based on the SDK platform's documentation
 | device_update | No  | Enables OTA update of devices before testing |
 | devices       | Yes | Defines a list of devices to apply the OTA update |
 | ota_method    | Yes | Defines the preferred method for OTA updates (2) |
