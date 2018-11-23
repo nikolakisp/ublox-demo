@@ -1,14 +1,13 @@
-# build_binary:
-#     builder: 'particle photon'
-#     binary_name: 'firmware/target/firmware.bin'
-#     script: cd $SPN_BUILDER_SDK && make PLATFORM=photon APPDIR=$SPN_PROJECT_DIR/firmware && echo "nikolas"
+build_binary:
+    builder: particle photon
+    source: firmware/
 
-testing:
-   script: testing/sample-test-script.py
-   env_vars: 
-       - $IFTTT_API_KEY
-       - $SPN_PARTICLE_TOKEN
-#     env_vars:
-#         - $SPN_PARTICLE_TOKEN
+#testing:
+#    script: testing/sample-test-script.py
+#    device_update:
+#        env_vars:
+#            - $SPN_PARTICLE_TOKEN
+#        devices:
+#            - $DEVID_1
 #        ota_method: particle
 #        binary: auto
