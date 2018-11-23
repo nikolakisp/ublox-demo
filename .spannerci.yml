@@ -3,12 +3,12 @@ build_binary:
      binary_name: 'firmware/target/firmware.bin'
      script: cd $SPN_BUILDER_SDK && make PLATFORM=photon APPDIR=$SPN_PROJECT_DIR/firmware
      post_flight: echo "++++++"
+     pre_flight: echo "++++++"
      
 testing:
    pre_flight: echo "....."
    post_flight: echo "++++++"
    script: testing/sample-test-script.py
-   
    #env_vars:
    #     - $SPN_PARTICLE_TOKEN
    #device_update:
