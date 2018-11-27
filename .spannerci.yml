@@ -6,7 +6,7 @@
 #    pre_flight: echo "++++++"
      
 testing:
-   pre_flight: echo "....."
+   pre_flight: "echo ".....""
    post_flight: echo "++++++"
    script: testing/sample-test-script.py
    #env_vars:
