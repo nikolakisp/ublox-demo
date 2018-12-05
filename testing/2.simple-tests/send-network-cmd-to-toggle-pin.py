@@ -59,6 +59,6 @@ if __name__ == "__main__":
 
     test_switch_on_network_cmd()
 
-    time.sleep(2)
+    time.sleep(5)
 
     test_switch_off_network_cmd()
