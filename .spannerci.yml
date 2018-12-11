@@ -1,7 +1,7 @@
 build_binary:
      builder: 'particle photon'
-     binary_name: st'mo/target/st'mo.bin
-     script: cd $SPN_BUILDER_SDK && make PLATFORM=photon APPDIR=$SPN_PROJECT_DIR/st'mo
+     binary_name: 'firmware/target/firmware.bin'
+     script: cd $SPN_BUILDER_SDK 
      pre_flight: echo "++++++"
    
 #testing:
