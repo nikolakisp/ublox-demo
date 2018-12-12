@@ -1,4 +1,4 @@
-import Spanner
+import spanner
 
 def validate_dummy_test_case():
     spanner.assertTrue(1);
