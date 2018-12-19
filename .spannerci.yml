@@ -3,16 +3,19 @@
 #      binary_name: 'firmware/target/firmware.bin'
 #      script: testing/sample-test-script.py
 #      pre_flight: echo "++++++"
-device_update_intergration:
-  ota_method: spanner shipper
-  env: shipper.yml
-  repos: /kappa/kippo
-# testing:
+# device_update_intergration:
+#   ota_method: spanner shipper
+#   env: shipper.yml
+#   repos: /kappa/kippo
+testing:
 #   pre_flight: "echo ....."
 #   script: testing/sample-test-script.py
 #   env_vars: 
 #       - $SPN_PARTICLE_TOKEN
-   #device_update:
+   device_update:
+     ota_method: spanner shipper
+     env: prod
+     repos: http://kappa/kippo/fasolakia
    #    devices:
    #        - $DEVID_1
    #    ota_method: particle
