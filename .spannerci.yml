@@ -15,7 +15,7 @@ testing:
    device_update:
      ota_method: spanner shipper
      env: prod
-     repos: same
+     repo: same
    #    devices:
    #        - $DEVID_1
    #    ota_method: particle
