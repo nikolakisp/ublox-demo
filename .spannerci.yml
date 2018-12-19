@@ -4,9 +4,9 @@
 #      script: testing/sample-test-script.py
 #      pre_flight: echo "++++++"
 device_update_intergration:
-    ota_method: 'spanner shipper'
-    env: 'shipper.yml'
-    repos: /kappa/kippo
+  ota_method: 'spanner shipper'
+  env: 'shipper.yml'
+  repos: /kappa/kippo
 # testing:
 #   pre_flight: "echo ....."
 #   script: testing/sample-test-script.py
