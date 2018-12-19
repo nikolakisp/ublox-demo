@@ -3,12 +3,15 @@
 #      binary_name: 'firmware/target/firmware.bin'
 #      script: testing/sample-test-script.py
 #      pre_flight: echo "++++++"
- 
-testing:
-  pre_flight: "echo ....."
-  script: testing/sample-test-script.py
-  env_vars: 
-      - $SPN_PARTICLE_TOKEN
+device_update_intergration:
+    ota_method:'spanner shipper'
+    env: 'shipper.yml'
+    repos: /kappa/kippo
+# testing:
+#   pre_flight: "echo ....."
+#   script: testing/sample-test-script.py
+#   env_vars: 
+#       - $SPN_PARTICLE_TOKEN
    #device_update:
    #    devices:
    #        - $DEVID_1
