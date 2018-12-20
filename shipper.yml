@@ -5,5 +5,5 @@ envs:
     -app: w/e/u/want
   prod:
     -description: " me noiazei ti 8a grapseis "
-    -devices: duo.yml
+    -devices: !!inc/file dev/device.yml
     -app: w/e/I/want
