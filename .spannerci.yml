@@ -12,10 +12,10 @@ testing:
    script: testing/scenario.py
 #   env_vars: 
 #       - $SPN_PARTICLE_TOKEN
-   device_update:
-     ota_method: spanner shipper
-     env: prod
-     repo: same
+#    device_update:
+#      ota_method: spanner shipper
+#      env: prod
+#      repo: same
    #    devices:
    #        - $DEVID_1
    #    ota_method: particle
