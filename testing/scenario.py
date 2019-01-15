@@ -8,18 +8,19 @@ INPUT_PIN = "D7"    #led of device => input pin of testboard
 OUTPUT_PIN = "D5"   #input of device => output pin of testboard
 def led_on():
     # check PIN state
-    value = testboard.digitalRead(INPUT_PIN)
+    status = testboard.digitalRead(INPUT_PIN)
+    Spanner.assertEqual(status,1)
 
 def button_press():
     # check PIN state
-    value = testboard.digitalWrite(OUTPUT_PIN,'LOW')
-    Spanner.assertTrue(value)
+    status = assertEqual.digitalWrite(OUTPUT_PIN,'LOW')
+    Spanner.assertEqual(status,1)
     
     
 def button_release():
     # check PIN state
-    value = testboard.digitalWrite(OUTPUT_PIN,'HIGH')
-    Spanner.assertFalse(value)
+    status = testboard.digitalWrite(OUTPUT_PIN,'HIGH')
+    Spanner.assertEqual(status,1)
 
 
 
@@ -36,7 +37,8 @@ if __name__ == "__main__":
         time.sleep(4)
         end_time = time.time()%60   
         stop = int(end_time - start_time)
-        print (i)
-        if stop == 20 :             #after 60 second stop 
-            break
+        print (stop)
+#         if stop == 20 :             #after 60 second stop 
+#             break
+        break
     print("blue")
