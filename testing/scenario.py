@@ -28,7 +28,6 @@ if __name__ == "__main__":
         time.sleep(3)
         end_time = datetime.now()   
         stop = end_time - start_time
-        print (stop.seconds)
         
         if stop.seconds >= 18 :             #after 15 seconds lef is off
             break
