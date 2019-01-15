@@ -1,9 +1,9 @@
 envs:
-  kappa:
-    -description: " den me noiazei ti 8a grapseis "
-    -devices: ena.yml
-    -app: w/e/u/want
-  prod:
-    -description: " me noiazei ti 8a grapseis "
-    -devices: !!inc/file dev/device.yml
-    -app: w/e/I/want
+  production:
+    description: "My env description"
+    devices: !!inc/file dev-prod.yml
+    app: scripts/
+  develop1:
+    description: "Running directly from the stens"
+    devices: !!inc/file dev-prod.yml
+    app: scripts/
