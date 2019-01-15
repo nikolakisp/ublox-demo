@@ -37,6 +37,6 @@ if __name__ == "__main__":
         end_time = time.time()%60   
         stop = int(end_time - start_time)
         print (i)
-        if stop == 60 :             #after 60 second stop 
+        if stop == 20 :             #after 60 second stop 
             break
     print("blue")
