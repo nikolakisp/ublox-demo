@@ -6,7 +6,7 @@ from Testboard import Testboard
 testboard = Testboard("myd")
 
 OUTPUT_PIN = "D5"   #input of device => output pin of testboard
-INPUT_PIN = "D7"    #led of device => input pin of testboard
+INPUT_PIN = "D6"    #led of device => input pin of testboard
 def button_press():
     # check PIN state
     status = testboard.digitalWrite(OUTPUT_PIN,'LOW')
