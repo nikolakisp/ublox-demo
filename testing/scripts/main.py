@@ -1,5 +1,5 @@
 # GPIOs Example - Showcase the GPIO module
-import time
+
 from hardware import gpio
 import led
 
@@ -13,7 +13,5 @@ while True:
     # Toggle Led based on SW2 Button
     if (str(sw2.read()) == "1"):
         led1.OFF()
-        time.sleep(3000)
     else:
         led1.ON()
-        time.sleep(3000)
