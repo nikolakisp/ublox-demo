@@ -24,16 +24,10 @@ def led_on(is_on):
     Spanner.assertEqual(value,is_on)
 
 if __name__ == "__main__":
-    start_time = datetime.now()     #time start to seconds
-    while 1:
+    for i in range(10):
         button_press()             #button is pressed -> led is on
         led_on(1)
         time.sleep(3)
         button_release()            #after 3 second button is released -> led is off
         led_on(0)
         time.sleep(3)
-        end_time = datetime.now()   
-        stop = end_time - start_time
-        
-        if stop.seconds >= 18 :            
-            break
