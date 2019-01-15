@@ -1,4 +1,4 @@
-import gpio
+from hardware import gpio
 
 class LED:
 
