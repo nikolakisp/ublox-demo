@@ -28,5 +28,5 @@ if __name__ == "__main__":
         end_time = time.time()%60   
         stop = int(end_time - start_time)
         print (stop)
-         if stop >= 20 :             #after 60 second stop 
-             break
+        if stop >= 20 :             #after 60 second stop 
+            break
