@@ -1,5 +1,5 @@
 # GPIOs Example - Showcase the GPIO module
-
+import time
 from hardware import gpio
 import led
 
@@ -15,3 +15,4 @@ while True:
         led1.OFF()
     else:
         led1.ON()
+    time.sleep(0.25)
