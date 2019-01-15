@@ -29,12 +29,6 @@ if __name__ == "__main__":
         end_time = datetime.now()   
         stop = end_time - start_time
         print (stop.seconds)
-        button_press()             #button is pressed
-        time.sleep(4)
-        button_release()            #after 4 second button is released and led is off
-        time.sleep(4)
-        end_time = datetime.now()  
-        stop = end_time - start_time
-        print (stop.seconds)
-        if stop.seconds >= 15 :             #after 60 second stop 
+        
+        if stop.seconds >= 15 :             #after 15 seconds lef is off
             break
