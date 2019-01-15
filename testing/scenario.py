@@ -36,6 +36,5 @@ if __name__ == "__main__":
         end_time = datetime.now()  
         stop = end_time - start_time
         print (stop.seconds)
-        break
-#         if stop >= 20 :             #after 60 second stop 
-#             break
+        if stop.seconds >= 15 :             #after 60 second stop 
+            break
