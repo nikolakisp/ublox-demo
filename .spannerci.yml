@@ -1,15 +1,15 @@
-build_binary:
-     builder: 'particle photon'
-     binary_name: 'firmware/target/firmware.bin'
-     script: testing/sample-test-script.py
+# build_binary:
+#      builder: 'particle photon'
+#      binary_name: 'firmware/target/firmware.bin'
+#      script: testing/sample-test-script.py
 #      pre_flight: echo "++++++"
 # device_update_intergration:
 #   ota_method: spanner shipper
 #   env: shipper.yml
 #   repos: /kappa/kippo
-# testing:
-# #   pre_flight: "echo ....."
-#    script: testing/1.basic-tests/GPIO/read-analog-input.py
+testing:
+#   pre_flight: "echo ....."
+   script: testing/sample-test-script.py
 #    env_vars: 
 #       - $myd
 #    device_update:
