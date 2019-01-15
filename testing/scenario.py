@@ -27,8 +27,8 @@ if __name__ == "__main__":
         button_release()            #after 4 second button is released and led is off
         time.sleep(4)
         end_time = datetime.now()   
-        stop = abs(int(end_time - start_time))
-        print (stop)
+        stop = end_time - start_time
+        print (stop.seconds)
         button_press()             #button is pressed
         time.sleep(4)
         button_release()            #after 4 second button is released and led is off
