@@ -1,4 +1,5 @@
 import time
+from datetime import datetime
 import Spanner
 from Testboard import Testboard
 
@@ -19,22 +20,22 @@ def button_release():
 
 
 if __name__ == "__main__":
-    start_time = time.time()%60     #time start to seconds
+    start_time = datetime.now()     #time start to seconds
     while 1:
         button_press()             #button is pressed
         time.sleep(4)
         button_release()            #after 4 second button is released and led is off
         time.sleep(4)
-        end_time = time.time()%60   
+        end_time = datetime.now()   
         stop = abs(int(end_time - start_time))
         print (stop)
         button_press()             #button is pressed
         time.sleep(4)
         button_release()            #after 4 second button is released and led is off
         time.sleep(4)
-        end_time = time.time()%60   
-        stop = abs(int(end_time - start_time))
-        print (stop)
+        end_time = datetime.now()  
+        stop = end_time - start_time
+        print (stop.seconds)
         break
 #         if stop >= 20 :             #after 60 second stop 
 #             break
