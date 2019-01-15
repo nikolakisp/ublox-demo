@@ -21,6 +21,7 @@ def button_release():
 def led_on(is_on):
     # check PIN state
     value = testboard.digitalRead(INPUT_PIN)
+    print("TEstboard value" + str(value))
     Spanner.assertEqual(value,is_on)
 
 if __name__ == "__main__":
