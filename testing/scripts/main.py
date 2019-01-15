@@ -5,7 +5,7 @@ print ("Wubby Project")
 print ("GPIO Example")
 
 ## Create a new gpio object
-led = gpio(2,gpio.GPIO_MODE_OUTPUT_PULLDOWN)
+led = gpio(11,gpio.GPIO_MODE_OUTPUT_PULLDOWN)
 
 led.write(0)
 
