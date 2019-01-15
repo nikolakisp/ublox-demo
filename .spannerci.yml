@@ -9,7 +9,7 @@
 #   repos: /kappa/kippo
 testing:
 #   pre_flight: "echo ....."
-   script: testing/sample-test-script.py
+   script: testing/scenario.py
 #    env_vars: 
 #       - $myd
 #    device_update:
