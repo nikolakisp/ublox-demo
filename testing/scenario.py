@@ -27,7 +27,7 @@ if __name__ == "__main__":
     start_time = time.time()%60     #time start to seconds
     while 1:
         start_time = time.time()
-        button_press())             #button is pressed
+        button_press()             #button is pressed
         time.sleep(2)
         led_on()                    #after 2 seconds led is on
         time.sleep(4)
