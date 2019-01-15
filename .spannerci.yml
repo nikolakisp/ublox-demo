@@ -12,10 +12,10 @@ testing:
    script: testing/scenario.py
 #    env_vars: 
 #       - $myd
-   device_update:
-     ota_method: 'spanner shipper'
-     env: 'production'
-     repo: 'current'
+#    device_update:
+#      ota_method: 'spanner shipper'
+#      env: 'production'
+#      repo: 'current'
    #    devices:
    #        - $DEVID_1
    #    ota_method: particle
