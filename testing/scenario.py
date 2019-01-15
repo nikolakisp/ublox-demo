@@ -13,7 +13,7 @@ def led_on():
 
 def button_press():
     # check PIN state
-    status = assertEqual.digitalWrite(OUTPUT_PIN,'LOW')
+    status = testboard.digitalWrite(OUTPUT_PIN,'LOW')
     Spanner.assertEqual(status,1)
     
     
