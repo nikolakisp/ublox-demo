@@ -21,11 +21,11 @@ def button_release():
 if __name__ == "__main__":
     start_time = time.time()%60     #time start to seconds
     while 1:
-        button_press()             #button is pressed
+        #button_press()             #button is pressed
         #time.sleep(2)
         #led_on()                    #after 2 seconds led is on
         #time.sleep(4)
-        #button_release()            #after 4 second button is released and led is off
+        button_release()            #after 4 second button is released and led is off
         #time.sleep(4)
         end_time = time.time()%60   
         stop = int(end_time - start_time)
