@@ -1,5 +1,5 @@
 import time
-from Spanner import Spanner
+import Spanner
 from Testboard import Testboard
 
 testboard = Testboard("270043000647343339373536")
@@ -13,13 +13,13 @@ def led_on():
 def button_press():
     # check PIN state
     value = testboard.digitalWrite(OUTPUT_PIN,'LOW')
-    spanner.assertTrue(value)
+    Spanner.assertTrue(value)
     
     
 def button_release():
     # check PIN state
     value = testboard.digitalWrite(OUTPUT_PIN,'HIGH')
-    spanner.assertFalse(value)
+    Spanner.assertFalse(value)
 
 
 
