@@ -25,8 +25,9 @@ def button_release():
 
 if __name__ == "__main__":
     start_time = time.time()%60     #time start to seconds
+    i=0
     while 1:
-        start_time = time.time()
+        i++
         button_press()             #button is pressed
         time.sleep(2)
         led_on()                    #after 2 seconds led is on
@@ -35,5 +36,7 @@ if __name__ == "__main__":
         time.sleep(4)
         end_time = time.time()%60   
         stop = int(end_time - start_time)
+        print (i)
         if stop == 60 :             #after 60 second stop 
             break
+    print("blue")
