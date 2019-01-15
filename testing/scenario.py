@@ -6,6 +6,8 @@ from Testboard import Testboard
 testboard = Testboard("myd")
 
 OUTPUT_PIN = "D5"   #input of device => output pin of testboard
+INPUT_PIN = "D7"    #led of device => input pin of testboard
+
 def button_press():
     # check PIN state
     status = testboard.digitalWrite(OUTPUT_PIN,'LOW')
@@ -17,7 +19,9 @@ def button_release():
     status = testboard.digitalWrite(OUTPUT_PIN,'HIGH')
     Spanner.assertEqual(status,1)
 
-
+def led_on():
+    # check PIN state
+    value = testboard.digitalRead(INPUT_PIN)
 
 if __name__ == "__main__":
     start_time = datetime.now()     #time start to seconds
