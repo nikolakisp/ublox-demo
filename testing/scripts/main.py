@@ -1,15 +1,15 @@
 import time
-from hardware import gpio
+import led
 
-print ("Wubby Project")
-print ("GPIO Example")
+## Create a new led object using the pin 11
+led1 = led.LED(11,1)
 
-## Create a new gpio object
-led = gpio(11,gpio.GPIO_MODE_OUTPUT_PULLDOWN)
-
-led.write(0)
-
-## Read Value
 while True:
-        led.toggle()
-        time.sleep(1000)
+    # Change LED state
+    led1.ON()
+
+    time.sleep(4000)
+
+    led1.OFF()
+
+    time.sleep(1000)
