@@ -2,7 +2,7 @@ import time
 import Spanner
 from Testboard import Testboard
 
-testboard = Testboard("270043000647343339373536")
+testboard = Testboard("myd")
 
 INPUT_PIN = "D7"    #led of device => input pin of testboard
 OUTPUT_PIN = "D5"   #input of device => output pin of testboard
