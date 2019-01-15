@@ -22,12 +22,12 @@ def button_release():
 if __name__ == "__main__":
     start_time = datetime.now()     #time start to seconds
     while 1:
-        button_press()             #button is pressed
+        button_press()             #button is pressed -> led is on
         time.sleep(3)
-        button_release()            #after 4 second button is released and led is off
+        button_release()            #after 3 second button is released -> led is off
         time.sleep(3)
         end_time = datetime.now()   
         stop = end_time - start_time
         
-        if stop.seconds >= 18 :             #after 15 seconds lef is off
+        if stop.seconds >= 18 :            
             break
