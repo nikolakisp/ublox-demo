@@ -1,5 +1,4 @@
 import Spanner
-
 def validate_dummy_test_case():
     Spanner.assertTrue(1);
 
