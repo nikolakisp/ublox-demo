@@ -2,7 +2,7 @@ envs:
   production:
     description: "My env description"
     devices: !!inc/file dev-prod.yml
-    app: testing/scripts/
+    app: testing/default
   develop1:
     description: "Running directly from the stens"
     devices: !!inc/file dev-prod.yml
