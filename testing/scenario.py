@@ -17,7 +17,7 @@ def button_release():
     status = testboard.digitalWrite(OUTPUT_PIN,'HIGH')
     Spanner.assertEqual(status,1)
 
-def led_on(is_on):
+def led(is_on):
     # check PIN state
     value = testboard.digitalRead(INPUT_PIN)
     Spanner.assertEqual(value,is_on)
@@ -25,8 +25,8 @@ def led_on(is_on):
 if __name__ == "__main__":
     for i in range(10):
         button_press()             #button is pressed -> led is on
-        led_on(1)
+        led(1)
         time.sleep(3)
         button_release()            #after 3 second button is released -> led is off
-        led_on(0)
+        led(0)
         time.sleep(3)
