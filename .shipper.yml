@@ -6,4 +6,4 @@ envs:
   develop:
     description: "Running directly from the stens"
     devices: !!inc/file devices-lab.yml
-    app: firmware/app2
+    app: firmware/app-lab
