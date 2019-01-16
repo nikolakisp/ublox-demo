@@ -4,6 +4,6 @@ envs:
     devices: !!inc/file devices-production.yml
     app: firmware/app1
   develop:
-    description: "Running directly from the stens"
+    description: "My dev env"
     devices: !!inc/file devices-lab.yml
     app: firmware/app-lab
