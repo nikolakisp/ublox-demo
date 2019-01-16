@@ -2,8 +2,8 @@ envs:
   production:
     description: "My env description"
     devices: !!inc/file devices-production.yml
-    app: testing/scripts
+    app: firmware/app1
   develop:
     description: "Running directly from the stens"
     devices: !!inc/file devices-lab.yml
-    app: scripts/
+    app: firmware/app2
