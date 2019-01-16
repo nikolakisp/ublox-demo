@@ -1,5 +1,4 @@
 import time
-from datetime import datetime
 import Spanner
 from Testboard import Testboard
 
