@@ -2,12 +2,12 @@ device1:
   name: "Wiced Board 1"
   type: "armCortexM"
   serial: "33323533-33324718-003F002E"
-  location: "factory1"
+  location: "Factory1"
   certs: "dev1-cert"
 
 device2:
   name: "Wiced Board 2"
   type: "armCortexM"
   serial: "30353634-3033470B-002B0032"
-  location: "factory1"
+  location: "Factory1"
   certs: "dev2-cert"
