@@ -9,9 +9,7 @@ class LED:
         self.gpio.write(1 - self.onLevel)
 
     def ON(self):
-        print("LED ON\r\n")
         self.gpio.write(self.onLevel)
 
     def OFF(self):
-        print("LED OFF\r\n")
         self.gpio.write(1 - self.onLevel)
