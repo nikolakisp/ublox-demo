@@ -17,10 +17,10 @@ def button_release():
     status = testboard.digitalWrite(OUTPUT_PIN,'HIGH')
     Spanner.assertEqual(status,1)
 
-def led(is_on):
+def led(value):
     # check PIN state
-    value = testboard.digitalRead(INPUT_PIN)
-    Spanner.assertEqual(value,is_on)
+    status = testboard.digitalRead(INPUT_PIN)
+    Spanner.assertEqual(status,value)
 
 if __name__ == "__main__":
     for i in range(10):
