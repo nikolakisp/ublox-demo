@@ -16,4 +16,3 @@ while True:
     else:
         led1.ON()
     sleep(3)
-# sleep_ms(250)
