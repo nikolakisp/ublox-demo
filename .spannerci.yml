@@ -1,12 +1,3 @@
-# build_binary:
-#      builder: 'particle photon'
-#      binary_name: 'firmware/target/firmware.bin'
-#      script: testing/sample-test-script.py
-#      pre_flight: echo "++++++"
-# device_update_intergration:
-#   ota_method: spanner shipper
-#   env: shipper.yml
-#   repos: /kappa/kippo
 testing:
 #   pre_flight: "echo ....."
    script: testing/scenario.py
@@ -16,7 +7,3 @@ testing:
      ota_method: 'spanner shipper'
      env: 'production'
      repo: 'current'
-   #    devices:
-   #        - $DEVID_1
-   #    ota_method: particle
-   #    binary: auto
