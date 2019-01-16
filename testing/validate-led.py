@@ -2,7 +2,7 @@ import time
 import Spanner
 from Testboard import Testboard
 
-testboard = Testboard("testboard_name")
+testboard = Testboard("testboard-ublox")
 # Our device's Input (GPIO2 - SW2) will be connected the Testboard's Pin D5, making it our
 # Output Pin
 OUTPUT_PIN = "D5"
