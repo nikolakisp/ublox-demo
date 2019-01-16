@@ -20,3 +20,4 @@ testing:
    #        - $DEVID_1
    #    ota_method: particle
    #    binary: auto
+   #
