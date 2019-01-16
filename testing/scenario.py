@@ -41,4 +41,3 @@ if __name__ == "__main__":
     for i in range(5):
         print("### Testing retries %d of 5 ###" % (i+1))
         validate_led_on_button_press()
-
