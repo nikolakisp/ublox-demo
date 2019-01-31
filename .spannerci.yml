@@ -1,9 +1,2 @@
 testing:
-#   pre_flight: "echo ....."
-   script: testing/validate-led.py
-#    env_vars: 
-#       - $myd
-   device_update:
-     ota_method: 'spanner shipper'
-     env: 'production'
-     repo: 'current'
+   script: testing/sample-test-script.py
